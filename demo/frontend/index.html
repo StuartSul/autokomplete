@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>AutoKomplete Demo</title>
+  </head>
+  <body>
+    <form autocomplete="off" action="#">
+      <div class="autocomplete">
+        <input
+          id="query"
+          type="text"
+          name="query"
+          placeholder="search query..."
+        />
+      </div>
+      <input type="submit" />
+    </form>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

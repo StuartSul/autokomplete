@@ -52,6 +52,3 @@ class AutoKomplete:
     def autokomplete(self, query):
         decomposed = decompose_sentence(query)
         return self.database.get(decomposed, [])
-
-ak = AutoKomplete(10, 'input_large.txt')
-print(ak.autokomplete('ㄱ'))
