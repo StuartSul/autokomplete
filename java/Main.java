@@ -12,7 +12,7 @@ public class Main {
         String filepath = args[1];
         
         try {
-            AutoKomplete ak = new AutoKomplete(k, filepath, true);
+            AutoKomplete ak = new AutoKomplete(k, filepath);
             System.out.println(ak.autokomplete("ㄱ"));
             memoryStats();
         } catch (IOException e) {

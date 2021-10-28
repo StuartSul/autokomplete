@@ -17,8 +17,8 @@ public class AutoKomplete {
     HashMap<String, TreeSet<String>> database;
     HashMap<String, Integer> frequencies;
 
-    public AutoKomplete(int k, String filepath, boolean isRaw) throws IOException {
-        
+    public AutoKomplete(int k, String filepath) throws IOException {
+
         try (
             FileReader fr = new FileReader(filepath);    
             BufferedReader br = new BufferedReader(fr);
